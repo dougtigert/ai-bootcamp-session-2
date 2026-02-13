@@ -1,13 +1,50 @@
+/* Base Styles - Following UI Guidelines */
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #212121;
+  background-color: #fafafa;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Roboto Mono', 'Courier New', monospace;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Utility Classes */
+.text-primary {
+  color: #212121;
+}
+
+.text-secondary {
+  color: #757575;
+}
+
+.bg-background {
+  background-color: #fafafa;
+}
+
+.bg-surface {
+  background-color: #ffffff;
 }

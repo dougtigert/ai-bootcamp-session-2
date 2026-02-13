@@ -1,0 +1,57 @@
+.task-filter {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  background-color: #fafafa;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.filter-group label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #212121;
+}
+
+.filter-select {
+  padding: 8px 12px;
+  border: 1px solid #bdbdbd;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: border-color 200ms ease;
+}
+
+.filter-select:hover {
+  border-color: #1976d2;
+}
+
+.filter-select:focus {
+  outline: none;
+  border: 2px solid #1976d2;
+  padding: 7px 11px;
+}
+
+@media (max-width: 768px) {
+  .task-filter {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .filter-group {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .filter-select {
+    flex: 1;
+  }
+}
