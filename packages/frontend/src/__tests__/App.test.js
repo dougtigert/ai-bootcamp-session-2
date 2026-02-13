@@ -64,7 +64,7 @@ describe('App', () => {
   test('shows loading spinner while fetching tasks', () => {
     render(<App />);
     
-    expect(screen.getByText('Loading tasks...')).toBeInTheDocument();
+    expect(screen.getByRole('status', { name: /loading/i })).toBeInTheDocument();
   });
 
   test('displays error message when fetch fails', async () => {
